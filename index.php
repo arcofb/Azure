@@ -29,7 +29,7 @@
     $host = "arcos.database.windows.net";
     $user = "arcos";
     $pass = "akucintaAllah01";
-    $db = "arcos";ss
+    $db = "arcos";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
