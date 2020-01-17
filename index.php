@@ -30,7 +30,6 @@
     $user = "arcos";
     $pass = "akucintaAllah01";
     $db = "arcos";
-
     // PHP Data Objects(PDO) Sample Code:
     try {
       $conn = new PDO("sqlsrv:server = tcp:arcos.database.windows.net,1433; Database = arcos", "arcos", "akucintaAllah01");
