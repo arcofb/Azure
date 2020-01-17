@@ -26,17 +26,31 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "arcos.database.windows.net";
-    $user = "arcos";
-    $pass = "akucintaAllah01";
-    $db = "arcos";
+    //$host = "arcos.database.windows.net";
+    //$user = "arcos";
+    //$pass = "akucintaAllah01";
+    //$db = "arcos";
 
+    //try {
+    //    $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
+    //    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    //} catch(Exception $e) {
+    //    echo "Failed: " . $e;
+    //}
+  
     try {
-        $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
-        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exception $e) {
-        echo "Failed: " . $e;
-    }
+    $conn = new PDO("sqlsrv:server = tcp:arcos.database.windows.net,1433; Database = arcos", "arcos", "akucintaAllah01");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
+
+// SQL Server Extension Sample Code:
+$connectionInfo = array("UID" => "arcos", "pwd" => "akucintaAllah01", "Database" => "arcos", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:arcos.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo);
 
     if (isset($_POST['submit'])) {
         try {
