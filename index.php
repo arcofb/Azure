@@ -21,9 +21,13 @@
  <form method="post" action="index.php" enctype="multipart/form-data" >
        <label>Nama</label><br>
   					<input type="text" name="name" id="name" class="form-control" placeholder="Name">
+       <label>Email</label><br>
+  					<input type="text" name="email" id="email" class="form-control" placeholder="Email">
+       <label>Job</label><br>
+  					<input type="text" name="job" id="job" class="form-control" placeholder="Job">
 <!--        Name  <input type="text" name="name" id="name"/></br></br> -->
-       Email   <input type="text" name="email" id="email"/></br></br>
-       Job <input type="text" name="job" id="job"/></br></br>
+<!--        Email   <input type="text" name="email" id="email"/></br></br> -->
+<!--        Job <input type="text" name="job" id="job"/></br></br> -->
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
