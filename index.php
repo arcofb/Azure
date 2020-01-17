@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "arcoapp-mysqldbserver.mysql.database.azure.com";
-    $user = "arcodb@arcoapp-mysqldbserver";
+    $host = "arcos.database.windows.net";
+    $user = "arcos";
     $pass = "akucintaAllah01";
-    $db = "arcoapp-mysqldbserver";
+    $db = "arcos";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
