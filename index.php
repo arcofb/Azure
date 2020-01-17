@@ -20,11 +20,11 @@
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
  <form method="post" action="index.php" enctype="multipart/form-data" >
        <label>Nama</label><br>
-  					<input type="text" name="name" id="name" class="form-control" placeholder="Name">
+  					<input type="text" name="name" id="name" class="form-control" placeholder="Name"><br>
        <label>Email</label><br>
-  					<input type="text" name="email" id="email" class="form-control" placeholder="Email">
+  					<input type="text" name="email" id="email" class="form-control" placeholder="Email"><br>
        <label>Job</label><br>
-  					<input type="text" name="job" id="job" class="form-control" placeholder="Job">
+  					<input type="text" name="job" id="job" class="form-control" placeholder="Job"><br>
 <!--        Name  <input type="text" name="name" id="name"/></br></br> -->
 <!--        Email   <input type="text" name="email" id="email"/></br></br> -->
 <!--        Job <input type="text" name="job" id="job"/></br></br> -->
