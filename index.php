@@ -48,9 +48,9 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "arcos", "pwd" => "akucintaAllah01", "Database" => "arcos", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:arcos.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+//$connectionInfo = array("UID" => "arcos", "pwd" => "akucintaAllah01", "Database" => "arcos", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+//$serverName = "tcp:arcos.database.windows.net,1433";
+//$conn = sqlsrv_connect($serverName, $connectionInfo);
 
     if (isset($_POST['submit'])) {
         try {
