@@ -28,7 +28,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <body>
         <h1>Analisis Gambar dengan Azure Computer Vision</h1>
 		<div class="mt-4 mb-2">
-			<form class="d-flex justify-content-lefr" action="index.php" method="post" enctype="multipart/form-data">
+			<form action="index.php" method="post">
 				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
 				<input type="submit" name="submit" value="Upload">
 			</form>
