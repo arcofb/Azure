@@ -1,6 +1,6 @@
 <html>
  <head>
- <Title>Registration Form</Title>
+ <Title>Analize Image</Title>
  <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
  	    color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -16,17 +16,11 @@
  </style>
  </head>
  <body>
- <h1>Register here!</h1>
- <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
+ <h1>Analize here!</h1>
  <form method="post" action="index.php" enctype="multipart/form-data" >
-       <label>Nama</label><br>
-  					<input type="text" name="name" id="name" class="form-control" placeholder="<- Your Name ->"><br>
-       <label>Email</label><br>
-  					<input type="text" name="email" id="email" class="form-control" placeholder="<- Your Email ->"><br>
-       <label>Job</label><br>
-  					<input type="text" name="job" id="job" class="form-control" placeholder="<- Your Job ->"><br>
-       <input type="submit" name="submit" value="Submit" />
-       <input type="submit" name="load_data" value="Load Data" />
+       <label>Image</label><br>
+	   <input type="file" name="file" id="file">
+	   <input type="submit" name="upload" value="Upload">
  </form>
  <?php
     $host = "arcos.database.windows.net";
@@ -43,24 +37,17 @@
 
     if (isset($_POST['submit'])) {
         try {
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $job = $_POST['job'];
-            $date = date("Y-m-d");
+            $image = $_POST['file'];
             // Insert data
-            $sql_insert = "INSERT INTO Registri (name, email, job, date) 
-                        VALUES (?,?,?,?)";
+            $sql_insert = "INSERT INTO image (image) 
+                        VALUES (?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
-            $stmt->bindValue(2, $email);
-            $stmt->bindValue(3, $job);
-            $stmt->bindValue(4, $date);
             $stmt->execute();
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
-
-        echo "<h3>Your're registered!</h3>";
+		
     } else if (isset($_POST['load_data'])) {
         try {
             $sql_select = "SELECT * FROM Registri";
