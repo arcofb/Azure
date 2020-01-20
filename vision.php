@@ -20,9 +20,9 @@ if (isset($_POST['submit'])) {
         	<h1>Hasil Analisis</h1>
         <script type="text/javascript">
             $(document).ready(function () {
-            var subscriptionKey = "5244d0b5afb846009d2d0c8f14313367";
+            var subscriptionKey = "741771bd722a49c3a4174c5514248901";
             var uriBase =
-            "https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze";
+            "https://arcosvision.cognitiveservices.azure.com//vision/v2.0/analyze";
             var params = {
                 "visualFeatures": "Categories,Description,Color",
                 "details": "",
