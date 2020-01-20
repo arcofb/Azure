@@ -3,10 +3,10 @@ if (isset($_POST['submit'])) {
 	if (isset($_POST['url'])) {
 		$url = $_POST['url'];
 	} else {
-		header("Location: Azure/index.php");
+		header("Location: https://github.com/odakade/Azure/index.php");
 	}
 } else {
-	header("Location: Azure/index.php");
+	header("Location: https://github.com/odakade/Azure/index.php");
 }
 ?>
 
