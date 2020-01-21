@@ -50,8 +50,8 @@ if (isset($_POST['submit'])) {
 </head>
 <body>
  <div class="topnav">
-  <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a href="http://arcosapp.azurewebsites.net/">Registri</a>
+  <a class="active" href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div> 
 <script type="text/javascript">
     function processImage() {
@@ -115,7 +115,6 @@ document.getElementById('analyze_btn').click();
 </script>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="imageDiv" style="width:420px; display:table-cell;">
-        Source image:
         <br><br>
         <img id="sourceImage" width="400" />
         <h3 id="desc"></h3>
