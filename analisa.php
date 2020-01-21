@@ -64,8 +64,8 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
  	</style>
 <body>
 <div class="topnav">
-  <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a href="http://arcosapp.azurewebsites.net/">Registri</a>
+  <a class="active" href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div> 
         		<h1>Analisis Kendaraan</h1>
 		<div class="mt-4 mb-2">
