@@ -45,7 +45,7 @@
  <body>
  <div class="topnav">
   <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a href="https://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div> 
 <h1>Register here!</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
