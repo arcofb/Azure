@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
 <br><br>
 <input type="text" name="inputImage" id="inputImage"
     value="<?php echo $url ?>" readonly />
-<button id="analyze_btn" onclick="processImage()">Analisa Now</button>
+<button id="analyze_btn" onclick="processImage()">Analisa</button>
 <br><br>
 <script language="javascript">
 document.getElementById('analyze_btn').click(); 
