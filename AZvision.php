@@ -19,10 +19,40 @@ if (isset($_POST['submit'])) {
     <script language="javascript">
         document.getElementById('analyze_btn').click(); 
     </script>
+    <style type="text/css">
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 </head>
 <body>
- 
+ <div class="topnav">
+  <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
+  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+</div> 
 <script type="text/javascript">
     function processImage() {
         
@@ -76,10 +106,9 @@ if (isset($_POST['submit'])) {
  
 <h1>Hasil Analisa</h1>
 <br><br>
-URL gambar:
 <input type="text" name="inputImage" id="inputImage"
     value="<?php echo $url ?>" readonly />
-<button id="analyze_btn" onclick="processImage()">Analyze image</button>
+<button id="analyze_btn" onclick="processImage()">Analisa Now</button>
 <br><br>
 <script language="javascript">
 document.getElementById('analyze_btn').click(); 
@@ -89,7 +118,7 @@ document.getElementById('analyze_btn').click();
         Source image:
         <br><br>
         <img id="sourceImage" width="400" />
-        <h3 id="desc">Wait ..</h3>
+        <h3 id="desc"></h3>
     </div>
 </div>
 </body>
