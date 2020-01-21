@@ -58,13 +58,11 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 </style>
 <body>
 <div class="topnav">
-  <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a href="http://arcosapp.azurewebsites.net/">Registri</a>
+  <a class="active" href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div>
 
 	<h1>Pilih, Unggah dan Analisa Gambar:</h1>
-    <br><br>
-    Pilih Gambar:
 	<br><br>
 	<form action="analisa.php" method="post">
 		<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
