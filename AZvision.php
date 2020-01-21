@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Selamat Datang di Azure Cognitive Service</title>
+    <title>Azure Cognitive Service</title>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
@@ -105,7 +105,7 @@ if (isset($_POST['submit'])) {
     };
 </script>
  
-<h1>Hasil Analisa</h1>
+<h1>Selamat Datang di Azure Cognitive Service</h1>
 <br><br>
 <input type="text" name="inputImage" id="inputImage"
     value="<?php echo $url ?>" readonly />
