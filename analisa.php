@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	$content = fopen($_FILES["fileToUpload"]["tmp_name"], "r");
 	// echo fread($content, filesize($fileToUpload));
 	$blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-	header("Location: analyze.php");
+	header("Location: analisa.php");
 }
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
@@ -28,9 +28,37 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
  <head>
     <title>Analisa Gambar dengan Azure Cognitive Service</title>
   </head>
+  <style type="text/css">
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 <body>
 <div class="topnav">
-  <a class="active" href="https://arcosapp.azurewebsites.net/">Registri</a>
+  <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
   <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div>
 
@@ -46,8 +74,8 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 	<table class='table table-hover'>
 			<thead>
 				<tr>
-					<th>File Name</th>
-					<th>File URL</th>
+					<th>Name</th>
+					<th>URL</th>
 					<th>Action</th>
 				</tr>
 			</thead>
@@ -74,11 +102,5 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 				?>
 			</tbody>
 	</table>
-
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
