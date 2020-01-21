@@ -27,6 +27,15 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <html>
  <head>
     <title>Undip Smart Parkir</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+	
   </head>
   <style type="text/css">
 	/* Add a black background color to the top navigation */
