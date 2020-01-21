@@ -59,7 +59,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <body>
 <div class="topnav">
   <a href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a class="active" href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a class="active" href="https://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div>
 
 	<h1>Pilih, Unggah dan Analisa Gambar:</h1>
