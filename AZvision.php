@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script language="javascript">
-        document.getElementById('analyze_btn').click(); 
+        document.getElementById('analisa_btn').click(); 
     </script>
     <style type="text/css">
   .topnav {
@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
 <br><br>
 <input type="text" name="inputImage" id="inputImage"
     value="<?php echo $url ?>" readonly />
-<button id="analyze_btn" onclick="processImage()" class="w3-button w3-purple" >Analisa</button>
+<button id="analisa_btn" onclick="processImage()" class="w3-button w3-purple" >Analisa</button>
 <a href="http://arcosapp.azurewebsites.net/analisa.php" class="w3-button w3-purple">Gambar Lainnya</a>
 <br><br>
 <script language="javascript">
