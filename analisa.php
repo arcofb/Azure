@@ -26,46 +26,42 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <!DOCTYPE html>
 <html>
  <head>
-    <title>Undip Smart Parkir</title>
-
+ 	<title>Analisa Gambar dengan Azure Cognitive Service</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
-	
-  </head>
-  <style type="text/css">
-	/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
+</head>
+	<style type="text/css">
+		/* Add a black background color to the top navigation */
+		.topnav {
+		background-color: #333;
+		overflow: hidden;
+		}
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+		/* Style the links inside the navigation bar */
+		.topnav a {
+		float: left;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+		/* Change the color of links on hover */
+		.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+		}
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
- </style>
+		/* Add a color to the active/current link */
+		.topnav a.active {
+		background-color: #4CAF50;
+		color: white;
+		}
+ 	</style>
 <body>
 <div class="topnav">
   <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
@@ -113,7 +109,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 	</div>
 
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
