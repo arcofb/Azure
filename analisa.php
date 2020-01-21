@@ -67,7 +67,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
   <a href="http://arcosapp.azurewebsites.net/">Registri</a>
   <a class="active" href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div> 
-        		<h1>Analisis Kendaraan</h1>
+        		<h1>Analisa Gambar</h1>
 		<div class="mt-4 mb-2">
 			<form class="d-flex justify-content-lefr" action="analisa.php" method="post" enctype="multipart/form-data">
 				<input type="file" name="fileToUpload" accept=".jpeg,.jpg,.png" required="">
