@@ -26,7 +26,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <!DOCTYPE html>
 <html>
  <head>
-    <title>Analisa Gambar dengan Azure Cognitive Service</title>
+    <title>Unggah dan Analisa Gambar dengan Azure Cognitive Service</title>
   </head>
   <style type="text/css">
   .topnav {
@@ -62,8 +62,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
   <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div>
 
-	<h1>Analyze image:</h1>
-    Enter the URL to an image, then click the <strong>Analyze image</strong> button.
+	<h1>Pilih, Unggah dan Analisa Gambar:</h1>
     <br><br>
     Pilih Gambar:
 	<br><br>
