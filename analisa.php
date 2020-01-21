@@ -26,12 +26,13 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <!DOCTYPE html>
 <html>
  <head>
- 	<title>Analisa Gambar dengan Azure Cognitive Service</title>
+    <title>Analisa Gambar dengan Azure Cognitive Service</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 	<style type="text/css">
 		/* Add a black background color to the top navigation */
@@ -94,7 +95,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td>
 								<form action="AZvision.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
-									<input type="submit" name="submit" value="Analisa Now" class="btn btn-primary">
+									<input type="submit" name="submit" value="Analisa Now" class="w3-button w3-purple">
 								</form>
 							</td>
 						</tr>
