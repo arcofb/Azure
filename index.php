@@ -1,6 +1,11 @@
 <html>
  <head>
-    <title>Analisa Gambar dengan Azure Cognitive Service</title>
+ <title>Analisa Gambar dengan Azure Cognitive Service</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
   </head>
   <style type="text/css">
  	body { background-color: #fff; border-top: solid 10px #000;
@@ -45,7 +50,7 @@
  <body>
  <div class="topnav">
   <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a href="https://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div> 
 <h1>Register here!</h1>
  <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
@@ -119,5 +124,9 @@
         }
     }
  ?>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
