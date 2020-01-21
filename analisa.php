@@ -26,22 +26,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <!DOCTYPE html>
 <html>
  <head>
- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico">
-
     <title>Undip Smart Parkir</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-	
   </head>
   <style type="text/css">
 	/* Add a black background color to the top navigation */
@@ -102,7 +87,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td><?php echo $blob->getName() ?></td>
 							<td><?php echo $blob->getUrl() ?></td>
 							<td>
-								<form action="AZvision.php" method="post">
+								<form action="AZision.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
 									<input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
 								</form>
