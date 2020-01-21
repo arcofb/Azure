@@ -65,7 +65,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 <body>
 <div class="topnav">
   <a class="active" href="http://arcosapp.azurewebsites.net/">Registri</a>
-  <a href="https://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
+  <a href="http://arcosapp.azurewebsites.net/analisa.php">Analisa Gambar</a>
 </div> 
         		<h1>Analisis Kendaraan</h1>
 		<div class="mt-4 mb-2">
@@ -92,9 +92,9 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td><?php echo $blob->getName() ?></td>
 							<td><?php echo $blob->getUrl() ?></td>
 							<td>
-								<form action="AZvision.php" method="post">
+								<form action="AZision.php" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
-									<input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
+									<input type="submit" name="submit" value="Analisa Now" class="btn btn-primary">
 								</form>
 							</td>
 						</tr>
