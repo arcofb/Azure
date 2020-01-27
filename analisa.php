@@ -8,8 +8,8 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=arcosblob;AccountKey=4Uk/MN5y2rJc5O6at5AEmimtW1O9mjVX4F1HFPzaNunWSqnS1iUjq4nBfo6ekcApGRiMO6gpps3pyPuX5OVQRQ==";
-$containerName = "arco";
+$connectionString = "";
+$containerName = "";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
